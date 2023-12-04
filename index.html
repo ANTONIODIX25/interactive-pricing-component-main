@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Frontend Mentor | Interactive pricing component</title>
+
+</head>
+    <main class="main__container">
+        <header class="header__container">
+            <div class="header__header"><h1>Simple, traffic-based pricing</h1></div>
+            <div class="header__subtext">Sign-up for our 30-day trial. <span class="header__subtext--break">No credit card required.</span></div>
+        </header>
+
+        <section class="slider__container">
+            <div class="slider__pageviews">
+                <h2><span id="slider__views">100k</span> Pageviews</h2>
+            </div>
+         
+
+            <div class="slider__slider">
+                <input type="range" min="0" max="100" value="50" step="25" class="slider" id="myRange">
+            </div>
+
+            <div class="slider__price">
+                <label for="myRange" class="slider__price--view" id="value"></label> 
+                </span>/ month</span>
+            </div>   
+            <div class="slider__billing">
+                <div>
+                    <label>Monthly Billing</label>
+                </div>
+                <div class="switch">
+                    <input type="checkbox" id="myCheckbox" value="off">
+                    <label for="myCheckbox" class="round__slider round"></label>
+                </div>
+                    <div class="slider__yearly__discount_wrapper">
+                        <span class="slider__yearly_billing">Yearly Billing</span>
+                        <div class="billing__discount__wrapper">
+                            <span class="billing__discount" id="discount">-25%</span>
+                        </div>
+                    </div>
+            </div>
+            <div class="slider__divider"></div>
+            <div class="slider__benefits">
+                <ul class="slider__benefits__list">
+                    <li><span>Unlimited websites</span></li>
+                    <li><span>100% data ownership</span></li>
+                    <li><span>Email reports</span></li>
+                </ul>
+            </div>
+            <div  class="slider__button">
+                <button class="button">Start my trial</button>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+       
+    </footer>
+ 
+</body>
+</html>
